@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Single-cell · CochleaConsensus</title>
+<link rel="stylesheet" href="assets/style.css?v=20261029"></head>
+<body data-page="singlecell.html">
+<header><div class="brand">CochleaConsensus</div>
+<div class="tag" data-en="Uniformly reanalysed cross-study consensus of animal hearing-loss models (mouse + zebrafish regeneration module) · v1.0, frozen 2026-10-29"
+data-zh="动物听力损失模型（小鼠 + 斑马鱼再生模块）统一重分析跨研究共识资源 · v1.0，冻结于 2026-10-29"></div>
+<nav><a href="index.html" class="">Home</a><a href="cohorts.html" class="">Cohorts</a><a href="consensus.html" class="">Consensus</a><a href="pathways.html" class="">Pathways</a><a href="singlecell.html" class="on">Single-cell</a><a href="ortholog.html" class="">Ortholog</a><a href="aging.html" class="">Aging</a><a href="analyze.html" class="">Analyze</a><a href="downloads.html" class="">Downloads</a><a href="methods.html" class="">Methods</a></nav>
+<div class="lang"><button id="btn-en" class="on">EN</button><button id="btn-zh">中文</button></div>
+</header><main>
+<h1 data-en="Single-cell" data-zh="单细胞层"></h1>
+
+<p data-en="22 single-cell / spatial series processed under one pipeline; 17 cell-level series totalling 624,714 cells after QC. All inference uses donor/library as the replicate unit (pseudobulk), never cells. 58 cell-type-level DE tables were produced (DESeq2 54, limma 4)."
+data-zh="22 个单细胞/空间系列统一管线处理；17 个细胞级系列 QC 后合计 624,714 个细胞。全部推断以供体/文库为重复单位（pseudobulk），从不以细胞为重复。共产出 58 张细胞型水平 DE 表（DESeq2 54、limma 4）。"></p>
+<p class="warn" data-en="Flagged: GSE291228 P4 endolymphatic-sac-type DE shows an anomalously large FDR-gene count under a 2v2 low-replication design (possible batch confounding); it is delivered as-is and must not be interpreted biologically."
+data-zh="点名警示：GSE291228 P4 内淋巴囊型 DE 在 2v2 低重复设计下 FDR 基因数异常大（可能批次混杂），按原样交付、不得作生物学解释。"></p>
+<div class="filters"><label>Series <select id="s-series"><option value="">All</option></select></label><span id="s-count"></span></div>
+<table class="t" id="sc-table"></table>
+<h2 data-en="Measured immune composition (no deconvolution)" data-zh="免疫成分实测（不做反卷积）"></h2>
+<p data-en="Immune-cell fractions below are measured directly from the cell-level data. No bulk deconvolution (CIBERSORT/ssGSEA-style inference) is performed anywhere in this resource. Most series are n=1/arm or low-replication, so group differences are descriptive."
+data-zh="下表免疫细胞占比直接由细胞级数据实测。本资源任何地方都不做 bulk 反卷积（CIBERSORT/ssGSEA 类推断）。多数系列为 n=1/臂或低重复，组间差异均为描述性。"></p>
+<table class="t" id="immune-table"></table>
+
+</main>
+<footer><span data-en="CochleaConsensus v1.0 · Data package: Zenodo DOI" data-zh="CochleaConsensus v1.0 · 数据包：Zenodo DOI"></span>
+<a href="https://doi.org/10.5281/zenodo.23754507">10.5281/zenodo.23754507</a> (concept DOI 10.5281/zenodo.23754506) ·
+<span data-en="Derived result tables only; source data from GEO." data-zh="仅分发派生结果表；原始数据来自 GEO。"></span></footer>
+<script src="assets/app.js?v=20261029"></script></body></html>

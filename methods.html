@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methods · CochleaConsensus</title>
+<link rel="stylesheet" href="assets/style.css?v=20261029"></head>
+<body data-page="methods.html">
+<header><div class="brand">CochleaConsensus</div>
+<div class="tag" data-en="Uniformly reanalysed cross-study consensus of animal hearing-loss models (mouse + zebrafish regeneration module) · v1.0, frozen 2026-10-29"
+data-zh="动物听力损失模型（小鼠 + 斑马鱼再生模块）统一重分析跨研究共识资源 · v1.0，冻结于 2026-10-29"></div>
+<nav><a href="index.html" class="">Home</a><a href="cohorts.html" class="">Cohorts</a><a href="consensus.html" class="">Consensus</a><a href="pathways.html" class="">Pathways</a><a href="singlecell.html" class="">Single-cell</a><a href="ortholog.html" class="">Ortholog</a><a href="aging.html" class="">Aging</a><a href="analyze.html" class="">Analyze</a><a href="downloads.html" class="">Downloads</a><a href="methods.html" class="on">Methods</a></nav>
+<div class="lang"><button id="btn-en" class="on">EN</button><button id="btn-zh">中文</button></div>
+</header><main>
+<h1 data-en="Methods" data-zh="方法与缺陷备案"></h1>
+
+<h2 data-en="Pipeline" data-zh="管线"></h2>
+<p data-en="Census: GEO series retrieved with hearing-loss-anchored queries (2026-10-19) and adjudicated per series (Step 1–2: title/abstract review, then sample-level parsing of all 2,418 GSM records; series merged into 86 independent studies). Bulk reanalysis (Step 3): count matrices → DESeq2, normalised abundance matrices → limma, one pipeline for all 86 in-scope contrasts (77 succeeded). Consensus grading: strong = same-direction significant in ≥3 contrasts with zero opposite; consensus = 2 contrasts, zero opposite; cross-study consensus additionally requires ≥2 independent studies. Single-cell (Step 4A): QC → normalisation → Leiden → unified marker-panel annotation gated on positive controls → pseudobulk DE with donor/library as replicates. Ortholog contrast (Step 4B): within-study Stouffer merging, 1:1 orthologs, 5,000 homolog permutations. Step 5 adds enrichment (layer-specific backgrounds), DoRothEA TF target enrichment, cross-insult sharing, deafness-panel overlap and measured immune composition."
+data-zh="普查：以听力损失锚定检索式取 GEO 系列（2026-10-19）并逐系列裁定（Step 1–2：标题/摘要复核后对全部 2,418 个 GSM 做样本级解析；系列合并为 86 个独立研究）。Bulk 重分析（Step 3）：计数矩阵走 DESeq2、归一化丰度矩阵走 limma，86 个在范对比同一管线（77 成功）。共识分级：strong = ≥3 对比同向显著且零反向；consensus = 2 对比同向零反向；跨研究口径另要求 ≥2 个独立研究。单细胞（Step 4A）：QC→归一化→Leiden→统一标志面板注释（正控门控）→以供体/文库为重复的 pseudobulk DE。同源对比（Step 4B）：研究内 Stouffer 合并、1:1 同源、5,000 次置换。Step 5 追加富集（层特异背景）、DoRothEA TF 靶基因富集、跨层共享、耳聋面板对照与免疫实测组成。"></p>
+<h2 data-en="Known defects, declared" data-zh="缺陷备案（如实）"></h2>
+<ul>
+<li data-en="9 of 86 in-scope bulk contrasts failed because the deposited data contain no reanalysable expression matrix (author result tables only, or mismatched multi-omic arms); each is named in the project records and in the Zenodo README." data-zh="86 个在范 bulk 对比中 9 个失败，原因是沉积数据不含可重分析的表达矩阵（只有作者结果表，或多组学臂错配）；逐个点名于项目记录与 Zenodo README。"></li>
+<li data-en="Three curated core series (GSE40207, GSE172286, GSE111668) contain no inner-ear samples; retained in the curation table, flagged unusable, excluded from reanalysis." data-zh="3 个核心策展系列（GSE40207、GSE172286、GSE111668）不含内耳样本；保留在策展表、标注不可用、不进重分析。"></li>
+<li data-en="GSE291228 single-cell DE is low-replication (2v2) with a possible batch confound; delivered as-is with its caveat." data-zh="GSE291228 单细胞 DE 为低重复（2v2）且可能批次混杂；带警示按原样交付。"></li>
+<li data-en="Sample arms for GSE158431 and GSE228756 rely on submitter ordering, verified post hoc by marker genes / PCA." data-zh="GSE158431 与 GSE228756 的样本臂依赖提交者排序，已以标志基因/PCA 事后复核。"></li>
+<li data-en="gEAR coverage figures in this resource: full census 32/172 series, mouse core 11/88 (12%), recounted from the curation table." data-zh="本资源的 gEAR 覆盖数字：全集 32/172、鼠核心 11/88（12%），由策展表重数。"></li>
+<li data-en="A pre-submission top-up scan on 2026-10-29 with identical queries found zero new in-scope series; v1.0 is a complete census at its stated scope as of the freeze date." data-zh="2026-10-29 以相同检索式做投稿前补扫，零新增在范系列；v1.0 在其声明口径下为冻结日期的完整普查。"></li>
+</ul>
+<h2 data-en="How this differs from gEAR" data-zh="与 gEAR 的区别"></h2>
+<p data-en="gEAR (Orvis et al., Nat Methods 2021, PMID 34172972; Hertzano &amp; Mahurkar, Hum Genet 2022, PMID 35235019) hosts datasets and visualises them one at a time; its comparison tool works within a single dataset. CochleaConsensus does not host datasets: it adjudicates, uniformly reanalyses and synthesises across studies — the layer gEAR does not provide."
+data-zh="gEAR（Orvis et al., Nat Methods 2021，PMID 34172972；Hertzano &amp; Mahurkar, Hum Genet 2022，PMID 35235019）托管数据集并逐个可视化，其比较工具只在单个数据集内工作。CochleaConsensus 不托管数据：它做裁定、统一重分析与跨研究合成——这是 gEAR 没有的一层。"></p>
+
+</main>
+<footer><span data-en="CochleaConsensus v1.0 · Data package: Zenodo DOI" data-zh="CochleaConsensus v1.0 · 数据包：Zenodo DOI"></span>
+<a href="https://doi.org/10.5281/zenodo.23754507">10.5281/zenodo.23754507</a> (concept DOI 10.5281/zenodo.23754506) ·
+<span data-en="Derived result tables only; source data from GEO." data-zh="仅分发派生结果表；原始数据来自 GEO。"></span></footer>
+<script src="assets/app.js?v=20261029"></script></body></html>

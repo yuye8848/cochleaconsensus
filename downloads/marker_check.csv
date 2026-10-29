@@ -1,0 +1,134 @@
+contrast_id,series,stratum,gene,expected,logFC,FDR,verdict,panel
+C014,GSE8342,NOISE,Fos,up,5.202,0.000413,pass,noise IEG panel
+C015,GSE8342,NOISE,Fos,up,2.911,0.00679,pass,noise IEG panel
+C041,GSE107086,NOISE,Fos,up,0.768,0.692,sign_only,noise IEG panel
+C042,GSE107086,NOISE,Fos,up,0.228,1,sign_only,noise IEG panel
+C051,GSE160639,NOISE,Fos,up,2.690,2.97e-20,pass,noise IEG panel
+C052,GSE160639,NOISE,Fos,up,2.056,2.46e-27,pass,noise IEG panel
+C087,GSE307393,NOISE,Fos,up,-1.511,0.0111,fail,noise IEG panel
+C088,GSE307393,NOISE,Fos,up,-1.310,0.0223,fail,noise IEG panel
+C014,GSE8342,NOISE,Jun,up,1.127,0.16,sign_only,noise IEG panel
+C015,GSE8342,NOISE,Jun,up,0.513,0.484,sign_only,noise IEG panel
+C041,GSE107086,NOISE,Jun,up,0.309,0.551,sign_only,noise IEG panel
+C042,GSE107086,NOISE,Jun,up,0.094,1,sign_only,noise IEG panel
+C051,GSE160639,NOISE,Jun,up,0.968,5.02e-25,pass,noise IEG panel
+C052,GSE160639,NOISE,Jun,up,0.950,1.55e-20,pass,noise IEG panel
+C087,GSE307393,NOISE,Jun,up,-0.422,0.175,fail,noise IEG panel
+C088,GSE307393,NOISE,Jun,up,-0.136,0.78,fail,noise IEG panel
+C014,GSE8342,NOISE,Junb,up,2.131,0.244,sign_only,noise IEG panel
+C015,GSE8342,NOISE,Junb,up,0.513,0.544,sign_only,noise IEG panel
+C041,GSE107086,NOISE,Junb,up,0.500,0.349,sign_only,noise IEG panel
+C042,GSE107086,NOISE,Junb,up,-0.002,1,fail,noise IEG panel
+C051,GSE160639,NOISE,Junb,up,0.897,3.28e-20,pass,noise IEG panel
+C052,GSE160639,NOISE,Junb,up,1.474,1.43e-23,pass,noise IEG panel
+C087,GSE307393,NOISE,Junb,up,-0.014,1,fail,noise IEG panel
+C088,GSE307393,NOISE,Junb,up,0.290,0.673,sign_only,noise IEG panel
+C014,GSE8342,NOISE,Egr1,up,2.271,0.0621,sign_only,noise IEG panel
+C015,GSE8342,NOISE,Egr1,up,0.779,0.339,sign_only,noise IEG panel
+C041,GSE107086,NOISE,Egr1,up,0.475,0.763,sign_only,noise IEG panel
+C042,GSE107086,NOISE,Egr1,up,0.117,1,sign_only,noise IEG panel
+C051,GSE160639,NOISE,Egr1,up,1.750,1.98e-11,pass,noise IEG panel
+C052,GSE160639,NOISE,Egr1,up,1.260,3.11e-14,pass,noise IEG panel
+C087,GSE307393,NOISE,Egr1,up,-0.470,0.174,fail,noise IEG panel
+C088,GSE307393,NOISE,Egr1,up,-0.403,0.296,fail,noise IEG panel
+C014,GSE8342,NOISE,Hspa1a,up,1.403,0.00167,pass,noise IEG panel
+C015,GSE8342,NOISE,Hspa1a,up,0.315,0.61,sign_only,noise IEG panel
+C041,GSE107086,NOISE,Hspa1a,up,0.553,0.561,sign_only,noise IEG panel
+C042,GSE107086,NOISE,Hspa1a,up,-0.425,1,fail,noise IEG panel
+C051,GSE160639,NOISE,Hspa1a,up,1.541,0.181,sign_only,noise IEG panel
+C052,GSE160639,NOISE,Hspa1a,up,1.264,0.178,sign_only,noise IEG panel
+C087,GSE307393,NOISE,Hspa1a,up,-0.148,0.706,fail,noise IEG panel
+C088,GSE307393,NOISE,Hspa1a,up,-0.392,0.322,fail,noise IEG panel
+C014,GSE8342,NOISE,Hspa1b,up,1.020,0.169,sign_only,noise IEG panel
+C015,GSE8342,NOISE,Hspa1b,up,0.599,0.428,sign_only,noise IEG panel
+C041,GSE107086,NOISE,Hspa1b,up,0.762,0.594,sign_only,noise IEG panel
+C042,GSE107086,NOISE,Hspa1b,up,-0.173,1,fail,noise IEG panel
+C051,GSE160639,NOISE,Hspa1b,up,0.818,0.525,sign_only,noise IEG panel
+C052,GSE160639,NOISE,Hspa1b,up,0.566,0.596,sign_only,noise IEG panel
+C087,GSE307393,NOISE,Hspa1b,up,-0.369,0.267,fail,noise IEG panel
+C088,GSE307393,NOISE,Hspa1b,up,-0.607,0.271,fail,noise IEG panel
+C014,GSE8342,NOISE,Atf3,up,2.214,0.0164,pass,noise stress panel
+C015,GSE8342,NOISE,Atf3,up,1.035,0.237,sign_only,noise stress panel
+C041,GSE107086,NOISE,Atf3,up,0.528,0.481,sign_only,noise stress panel
+C042,GSE107086,NOISE,Atf3,up,0.026,1,sign_only,noise stress panel
+C051,GSE160639,NOISE,Atf3,up,2.115,7.18e-10,pass,noise stress panel
+C052,GSE160639,NOISE,Atf3,up,2.320,2.81e-28,pass,noise stress panel
+C087,GSE307393,NOISE,Atf3,up,0.061,0.884,sign_only,noise stress panel
+C088,GSE307393,NOISE,Atf3,up,0.075,0.846,sign_only,noise stress panel
+C035,GSE84735,OTOTOX,Atf3,up,0.931,0.0915,sign_only,ototox stress panel
+C045,GSE158431,OTOTOX,Atf3,up,0.261,1,sign_only,ototox stress panel
+C046,GSE158431,OTOTOX,Atf3,up,-0.302,1,fail,ototox stress panel
+C047,GSE158431,OTOTOX,Atf3,up,-0.133,0.917,fail,ototox stress panel
+C048,GSE158431,OTOTOX,Atf3,up,-0.356,0.788,fail,ototox stress panel
+C049,GSE158431,OTOTOX,Atf3,up,0.026,0.991,sign_only,ototox stress panel
+C050,GSE158431,OTOTOX,Atf3,up,-0.320,0.679,fail,ototox stress panel
+C077,GSE292468,OTOTOX,Atf3,up,4.40410666675308,,no_fdr,ototox stress panel
+C082,GSE303895,OTOTOX,Atf3,up,-0.228,0.929,fail,ototox stress panel
+C083,GSE303895,OTOTOX,Atf3,up,0.646,1,sign_only,ototox stress panel
+C084,GSE303895,OTOTOX,Atf3,up,-0.146,1,fail,ototox stress panel
+C035,GSE84735,OTOTOX,Ddit3,up,0.472,0.0962,sign_only,ototox stress panel
+C045,GSE158431,OTOTOX,Ddit3,up,-0.300,1,fail,ototox stress panel
+C046,GSE158431,OTOTOX,Ddit3,up,-0.130,1,fail,ototox stress panel
+C047,GSE158431,OTOTOX,Ddit3,up,-0.017,0.99,fail,ototox stress panel
+C048,GSE158431,OTOTOX,Ddit3,up,0.122,0.946,sign_only,ototox stress panel
+C049,GSE158431,OTOTOX,Ddit3,up,0.029,0.991,sign_only,ototox stress panel
+C050,GSE158431,OTOTOX,Ddit3,up,0.148,0.823,sign_only,ototox stress panel
+C077,GSE292468,OTOTOX,Ddit3,up,0.651,0.278,sign_only,ototox stress panel
+C082,GSE303895,OTOTOX,Ddit3,up,-0.194,0.904,fail,ototox stress panel
+C083,GSE303895,OTOTOX,Ddit3,up,-0.044,1,fail,ototox stress panel
+C084,GSE303895,OTOTOX,Ddit3,up,-0.393,1,fail,ototox stress panel
+C035,GSE84735,OTOTOX,Mt1,up,0.056,0.856,sign_only,ototox stress panel
+C045,GSE158431,OTOTOX,Mt1,up,0.473,1,sign_only,ototox stress panel
+C046,GSE158431,OTOTOX,Mt1,up,0.569,1,sign_only,ototox stress panel
+C047,GSE158431,OTOTOX,Mt1,up,0.379,0.655,sign_only,ototox stress panel
+C048,GSE158431,OTOTOX,Mt1,up,0.132,0.956,sign_only,ototox stress panel
+C049,GSE158431,OTOTOX,Mt1,up,0.873,0.0126,pass,ototox stress panel
+C050,GSE158431,OTOTOX,Mt1,up,0.650,0.312,sign_only,ototox stress panel
+C077,GSE292468,OTOTOX,Mt1,up,1.046,0.569,sign_only,ototox stress panel
+C082,GSE303895,OTOTOX,Mt1,up,-0.052,0.989,fail,ototox stress panel
+C083,GSE303895,OTOTOX,Mt1,up,0.447,1,sign_only,ototox stress panel
+C084,GSE303895,OTOTOX,Mt1,up,-0.013,1,fail,ototox stress panel
+C035,GSE84735,OTOTOX,Mt2,up,0.145,0.725,sign_only,ototox stress panel
+C045,GSE158431,OTOTOX,Mt2,up,0.793,1,sign_only,ototox stress panel
+C046,GSE158431,OTOTOX,Mt2,up,0.098,1,sign_only,ototox stress panel
+C047,GSE158431,OTOTOX,Mt2,up,0.396,0.741,sign_only,ototox stress panel
+C048,GSE158431,OTOTOX,Mt2,up,-0.172,0.96,fail,ototox stress panel
+C049,GSE158431,OTOTOX,Mt2,up,1.352,0.00397,pass,ototox stress panel
+C050,GSE158431,OTOTOX,Mt2,up,1.070,0.28,sign_only,ototox stress panel
+C077,GSE292468,OTOTOX,Mt2,up,1.640,0.325,sign_only,ototox stress panel
+C082,GSE303895,OTOTOX,Mt2,up,-0.417,0.916,fail,ototox stress panel
+C083,GSE303895,OTOTOX,Mt2,up,0.938,1,sign_only,ototox stress panel
+C084,GSE303895,OTOTOX,Mt2,up,0.759,1,sign_only,ototox stress panel
+C053,GSE161156,REGEN,Atoh1,up,13.162,2.75e-57,pass,transgene by design
+C054,GSE161156,REGEN,Atoh1,up,13.430,9.22e-35,pass,transgene by design
+C055,GSE161156,REGEN,Atoh1,up,13.647,9.3e-42,pass,transgene by design
+C053,GSE161156,REGEN,Ikzf2,up,3.149,7.2e-05,pass,transgene by design
+C054,GSE161156,REGEN,Ikzf2,up,3.608,0.000271,pass,transgene by design
+C055,GSE161156,REGEN,Ikzf2,up,4.389,1.98e-07,pass,transgene by design
+C031,GSE59416,REGEN,Tubb3,down,-2.057,0.0175,pass,ouabain nerve injury 3d/7d
+C032,GSE59416,REGEN,Tubb3,down,-2.920,0.000707,pass,ouabain nerve injury 3d/7d
+C031,GSE59416,REGEN,Nefl,down,-2.255,0.0016,pass,ouabain nerve injury 3d/7d
+C032,GSE59416,REGEN,Nefl,down,-3.266,0.00186,pass,ouabain nerve injury 3d/7d
+C033,GSE70659,GENETIC,Cmah,down,0.259,0.742,fail,KO target (cmah-null)
+C068,GSE242321,GENETIC,Atf6,down,-0.993,0.00022,pass,KO target
+C076,GSE281437,GENETIC,Trim71,down,-0.349,0.326,sign_only,KO target
+C081,GSE300215,GENETIC,Casz1,down,-1.268,4.7e-20,pass,KO target
+C078,GSE299064,GENETIC,Mpzl2,down,-1.247,0.0151,pass,KO target (q74x)
+C104,GSE320419,GENETIC,Dnajc17,down,0.069,1,fail,KO target (cko)
+C058,GSE182575,GENETIC,Isl1,down,-0.146,0.465,sign_only,KO target (cko)
+C059,GSE196353,GENETIC,Slc9a6,down,-3.665,8.91e-35,pass,KO target (Nhe6)
+C016,GSE49543,AGING,Slc26a5,down,-0.022,1,sign_only,aging severe presbycusis (report-only)
+C017,GSE49543,AGING,Slc26a5,down,-0.008,1,sign_only,aging severe presbycusis (report-only)
+C018,GSE49543,AGING,Slc26a5,down,0.105,0.668,fail,aging severe presbycusis (report-only)
+C019,GSE55853,FISH-regen,atoh1a,up,0.481,0.0924,sign_only,"fish regen (report-only, treated arms)"
+C020,GSE55853,FISH-regen,atoh1a,up,0.518,0.0605,sign_only,"fish regen (report-only, treated arms)"
+C021,GSE55853,FISH-regen,atoh1a,up,0.882,0.00198,pass,"fish regen (report-only, treated arms)"
+C022,GSE55853,FISH-regen,atoh1a,up,1.203,0.000498,pass,"fish regen (report-only, treated arms)"
+C023,GSE55853,FISH-regen,atoh1a,up,-0.101,0.733,fail,"fish regen (report-only, treated arms)"
+C024,GSE55853,FISH-regen,atoh1a,up,0.069,0.848,sign_only,"fish regen (report-only, treated arms)"
+C025,GSE55853,FISH-regen,atoh1a,up,0.046,0.881,sign_only,"fish regen (report-only, treated arms)"
+C026,GSE55853,FISH-regen,atoh1a,up,-0.068,0.795,fail,"fish regen (report-only, treated arms)"
+C091,GSE312253,GENETIC,Clrn1,down,-3.181,8.73e-131,pass,KO target (contrast-matched)
+C092,GSE312253,GENETIC,Clrn1,down,-3.466,2.96e-131,pass,KO target (contrast-matched)
+C092,GSE312253,GENETIC,Clrn2,down,-1.329,2.58e-05,pass,KO target (contrast-matched)
+C093,GSE312253,GENETIC,Clrn2,down,-1.134,0.000824,pass,KO target (contrast-matched)

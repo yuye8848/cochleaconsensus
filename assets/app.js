@@ -209,7 +209,7 @@ if (PAGE === "analyze.html") (async () => {
     }
     if (rec.sc) {
       h += `<h4>Single-cell DE (${rec.sc.length})</h4><table class="t"><thead><tr><th>Series</th><th>Contrast</th><th>Cell type</th><th>logFC</th><th>FDR</th></tr></thead><tbody>` +
-        rec.sc.map(r => `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`).join("") + "</tbody></table>";
+        rec.sc.map(r => `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${(+r[3]).toFixed(3)}</td><td>${(+r[4]).toExponential(2)}</td></tr>`).join("") + "</tbody></table>";
     }
     out.innerHTML = h;
   };

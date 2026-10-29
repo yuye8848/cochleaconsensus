@@ -1,8 +1,8 @@
 file,source_path,bytes,md5,description
-README.md,step5/zenodo_package/README.md (authored for this package),11930,096c830598d8461a3be33ed929ad9251,"Resource documentation: frozen scope, corrections, layout and column descriptions, caveats"
-01_curation/universe_final.csv,step1/universe_final.csv,137891,931c889075788b9062e1d2ef1ebef47c,Curation table: full census of 172 GEO series with tier/stratum classification and gEAR match
-01_curation/comparable_contrasts.csv,step2/comparable_contrasts.csv,15245,dafcef5f9b841c9c08f6dd0c1032863b,110 usable contrasts defined at sample level (Step 2)
-01_curation/series_verdicts.csv,step2/series_verdicts.csv,10583,5bd695f18b58d33a6c96347698a1460a,Per-series adjudication verdicts for 98 core series (comparable/limited/unusable)
+README.md,step5/zenodo_package/README.md (authored for this package),13585,2104d3a739beb12add930b76813c300a,"Resource documentation: frozen scope (v1.1 corrected counts), corrections, layout and column descriptions, caveats"
+01_curation/universe_final.csv,step1/universe_final.csv,138463,b8f4aed72df9af8da85a9e811e28ea8c,Curation table: full census of 172 GEO series with tier/stratum classification and gEAR match. v1.1: 4 chicken series re-adjudicated EXCLUDE (see ERRATUM_v1.1.md)
+01_curation/comparable_contrasts.csv,step2/comparable_contrasts.csv,15245,dafcef5f9b841c9c08f6dd0c1032863b,"110 contrasts defined at sample level (Step 2); the 12 chicken contrasts (C002-C013) were excluded at the Step 3 manifest stage and never reanalysed, so analyses rest on the 98 core contrasts (see ERRATUM_v1.1.md)"
+01_curation/series_verdicts.csv,step2/series_verdicts.csv,10573,eebbb3e7dadfe3d1ff8902d60b1ec635,Per-series adjudication verdicts for the 98 adjudicated series (94 core + 4 excluded chicken series; comparable/limited/unusable/excluded). v1.1: chicken series re-adjudicated EXCLUDE (see ERRATUM_v1.1.md)
 02_bulk_de/C001_STUDY02_GSE4866.csv,step3/de_tables/C001_STUDY02_GSE4866.csv,1701590,7820517c0bb428cc7218b528e489af61,"Bulk differential expression table (uniform reanalysis, Step 3); file name = contrast_study_series"
 02_bulk_de/C014_STUDY05_GSE8342.csv,step3/de_tables/C014_STUDY05_GSE8342.csv,703919,a0c07c9bae8145c7f7e88d74a8110cf9,"Bulk differential expression table (uniform reanalysis, Step 3); file name = contrast_study_series"
 02_bulk_de/C015_STUDY05_GSE8342.csv,step3/de_tables/C015_STUDY05_GSE8342.csv,705073,3c851c40308e1dd76449d0dfe70609ec,"Bulk differential expression table (uniform reanalysis, Step 3); file name = contrast_study_series"
@@ -183,3 +183,4 @@ README.md,step5/zenodo_package/README.md (authored for this package),11930,096c8
 06_step5_derived/immune_consensus_genes.csv,step5/immune_consensus_genes.csv,85966,e7d21ee4f6b4aac3d111d010148366a1,Immune-system-process annotated genes (GO:0002376) within bulk consensus lists (Step 5B)
 06_step5_derived/gene_profiles_long.csv,step5/gene_profiles_long.csv,328658523,a44ab519667a91b28dd3ad973a1fe3a7,"Long-format per-gene profiles across all bulk contrasts, consensus tables and single-cell DE tables (Step 5D)"
 06_step5_derived/gene_profiles.json,step5/gene_profiles.json,45504200,bdafbd1eb96c7db76534bb5bc643ec16,"Gene-indexed JSON version of gene profiles for the website gene-lookup tool (Step 5D); large file, see README note"
+ERRATUM_v1.1.md,step5/zenodo_package/ERRATUM_v1.1.md (authored for v1.1),3952,bb5099ab73f5ba43af8f2154a446e01f,"Erratum for v1.1: the four chicken (Gallus gallus) series mislabelled as core in v1.0, the corrected census counts, and confirmation that no result changed"

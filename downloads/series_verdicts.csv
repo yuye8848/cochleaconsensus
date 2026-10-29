@@ -84,11 +84,11 @@ GSE53863,STUDY10,GENETIC,CORE-bulk,12,3,title,limited,no baseline/control arm id
 GSE55853,STUDY11,FISH-regen,CORE-bulk,52,12,chars,comparable,
 GSE56176,STUDY12,FISH-regen,CORE-bulk,24,8,chars,comparable,
 GSE59416,STUDY13,REGEN,CORE-bulk,12,4,title,comparable,
-GSE5991,STUDY03,OTOTOX,CORE-bulk,65,3,title,comparable,"Step 4 write-back (Step 3 audit): organism is Gallus gallus (chicken), outside resource scope (mouse + zebrafish)"
+GSE5991,STUDY03,OTOTOX,EXCLUDE,65,3,title,excluded,"Step 4 write-back (Step 3 audit): organism is Gallus gallus (chicken), outside resource scope (mouse + zebrafish)"
 GSE6045,STUDY04,AGING,CORE-bulk,6,2,chars,limited,no baseline/control arm identifiable (graded or time-course design)
-GSE6050,STUDY03,OTOTOX,CORE-bulk,51,3,title,comparable,"Step 4 write-back (Step 3 audit): organism is Gallus gallus (chicken), outside resource scope (mouse + zebrafish)"
-GSE6051,STUDY03,REGEN,CORE-bulk,77,4,title,limited,"no baseline/control arm identifiable (graded or time-course design); Step 4 write-back (Step 3 audit): organism is Gallus gallus (chicken), outside resource scope (mouse + zebrafish)"
-GSE6052,STUDY03,REGEN,CORE-bulk,33,4,title,limited,"no baseline/control arm identifiable (graded or time-course design); Step 4 write-back (Step 3 audit): organism is Gallus gallus (chicken), outside resource scope (mouse + zebrafish)"
+GSE6050,STUDY03,OTOTOX,EXCLUDE,51,3,title,excluded,"Step 4 write-back (Step 3 audit): organism is Gallus gallus (chicken), outside resource scope (mouse + zebrafish)"
+GSE6051,STUDY03,REGEN,EXCLUDE,77,4,title,excluded,"no baseline/control arm identifiable (graded or time-course design); Step 4 write-back (Step 3 audit): organism is Gallus gallus (chicken), outside resource scope (mouse + zebrafish)"
+GSE6052,STUDY03,REGEN,EXCLUDE,33,4,title,excluded,"no baseline/control arm identifiable (graded or time-course design); Step 4 write-back (Step 3 audit): organism is Gallus gallus (chicken), outside resource scope (mouse + zebrafish)"
 GSE70659,STUDY14,GENETIC,CORE-bulk,6,2,chars,comparable,
 GSE8342,STUDY05,NOISE,CORE-bulk,10,4,title,limited,smallest usable arm n=2 (=2)
 GSE83599,STUDY15,GENETIC,CORE-bulk,6,2,title,limited,no baseline/control arm identifiable (graded or time-course design)

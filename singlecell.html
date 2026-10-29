@@ -16,6 +16,9 @@ data-zh="动物听力损失模型（小鼠 + 斑马鱼再生模块）统一重�
 data-zh="22 个单细胞/空间系列统一管线处理；17 个细胞级系列 QC 后合计 624,714 个细胞。全部推断以供体/文库为重复单位（pseudobulk），从不以细胞为重复。共产出 58 张细胞型水平 DE 表（DESeq2 54、limma 4）。"></p>
 <p class="warn" data-en="Flagged: GSE291228 P4 endolymphatic-sac-type DE shows an anomalously large FDR-gene count under a 2v2 low-replication design (possible batch confounding); it is delivered as-is and must not be interpreted biologically."
 data-zh="点名警示：GSE291228 P4 内淋巴囊型 DE 在 2v2 低重复设计下 FDR 基因数异常大（可能批次混杂），按原样交付、不得作生物学解释。"></p>
+<img src="img/singlecell_overview.png" alt="Single-cell layer overview" style="max-width:100%">
+<p class="figcap" data-en="Single-cell layer overview. (A) Cells after QC per series (624,714 in total). (B) Cell-type composition per series. (C) UMAP of GSE218328 by annotated cell type. (D) The same UMAP by genotype × age. (E) FDR-significant genes per cell-type DE table (two flagged tables labelled). (F) Measured immune-cell fraction per series."
+data-zh="单细胞层总览。(A) 各系列 QC 后细胞数（合计 624,714）。(B) 各系列细胞型组成。(C) GSE218328 按注释细胞型的 UMAP。(D) 同一 UMAP 按基因型×年龄着色。(E) 每张细胞型 DE 表的 FDR 显著基因数（两张警示表已标注）。(F) 各系列免疫细胞实测占比。"></p>
 <div class="filters"><label>Series <select id="s-series"><option value="">All</option></select></label><span id="s-count"></span></div>
 <table class="t" id="sc-table"></table>
 <h2 data-en="Measured immune composition (no deconvolution)" data-zh="免疫成分实测（不做反卷积）"></h2>

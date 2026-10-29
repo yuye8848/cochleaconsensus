@@ -205,7 +205,7 @@ if (PAGE === "analyze.html") (async () => {
     let h = `<h3>${esc(key)}</h3>`;
     if (rec.bulk) {
       h += `<h4>Bulk contrasts (${rec.bulk.length})</h4><table class="t"><thead><tr><th>Layer</th><th>Study</th><th>Contrast</th><th>logFC</th><th>FDR</th></tr></thead><tbody>` +
-        rec.bulk.map(r => `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`).join("") + "</tbody></table>";
+        rec.bulk.map(r => `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${(+r[4]).toFixed(3)}</td><td>${(+r[5]).toExponential(2)}</td></tr>`).join("") + "</tbody></table>";
     }
     if (rec.sc) {
       h += `<h4>Single-cell DE (${rec.sc.length})</h4><table class="t"><thead><tr><th>Series</th><th>Contrast</th><th>Cell type</th><th>logFC</th><th>FDR</th></tr></thead><tbody>` +

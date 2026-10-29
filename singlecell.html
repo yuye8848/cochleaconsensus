@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Single-cell · CochleaConsensus</title>
-<link rel="stylesheet" href="assets/style.css?v=20261029b"></head>
+<link rel="stylesheet" href="assets/style.css?v=20261029c"></head>
 <body data-page="singlecell.html">
 <header><div class="brand">CochleaConsensus</div>
 <div class="tag" data-en="Uniformly reanalysed cross-study consensus of animal hearing-loss models (mouse + zebrafish regeneration module) · v1.0, frozen 2026-10-29"
@@ -21,6 +21,26 @@ data-zh="点名警示：GSE291228 P4 内淋巴囊型 DE 在 2v2 低重复设计�
 data-zh="单细胞层总览。(A) 各系列 QC 后细胞数（合计 624,714）。(B) 各系列细胞型组成。(C) GSE218328 按注释细胞型的 UMAP。(D) 同一 UMAP 按基因型×年龄着色。(E) 每张细胞型 DE 表的 FDR 显著基因数（两张警示表已标注）。(F) 各系列免疫细胞实测占比。"></p>
 <div class="filters"><label>Series <select id="s-series"><option value="">All</option></select></label><span id="s-count"></span></div>
 <table class="t" id="sc-table"></table>
+<h2 data-en="Browse a cell-type DE table" data-zh="浏览细胞型 DE 表"></h2>
+<p data-en="Pick a series and one of its cell-type DE tables to browse its significant genes (FDR &lt; 0.05, precomputed per table and loaded on demand). Filter by gene, minimum |logFC| and maximum FDR; click a column header to sort. Display is capped at the top 200 rows under the current sort."
+data-zh="选择一个系列及其某张细胞型 DE 表，浏览其显著基因（FDR &lt; 0.05，逐表预计算、按需加载）。可按基因、最低 |logFC| 与最高 FDR 筛选，点击表头排序。按当前排序最多显示前 200 行。"></p>
+<div class="filters">
+<label><span data-en="Series" data-zh="系列"></span> <select id="de-series"></select></label>
+<label><span data-en="Cell-type table" data-zh="细胞型表"></span> <select id="de-table"></select></label>
+<label><span data-en="Search gene" data-zh="搜索基因"></span> <input id="de-q" type="text"></label>
+<label>|logFC| ≥ <select id="de-lfc"><option value="0">0</option><option value="0.5">0.5</option><option value="1">1</option><option value="2">2</option></select></label>
+<label>FDR ≤ <select id="de-fdr"><option value="0.05">0.05</option><option value="0.01">0.01</option><option value="0.001">0.001</option></select></label>
+<span id="de-count"></span></div>
+<table class="t" id="de-results"></table>
+<h2 data-en="Cell-type composition comparator" data-zh="细胞型组成对比器"></h2>
+<p data-en="Measured cell-type composition per series, drawn from the per-sample composition counts. Where a series has more than one sample-arm group in the metadata, tick the box to split the bar by group; single-group series are shown combined. Pick a second series for a side-by-side comparison."
+data-zh="各系列的细胞型实测组成，数据来自逐样本组成计数。某系列在元数据中有多个样本臂分组时，勾选可按组拆分条带；单分组系列合并展示。可再选第二个系列并排对比。"></p>
+<div class="filters">
+<label><span data-en="Series A" data-zh="系列 A"></span> <select id="comp-a"></select></label>
+<label><input id="comp-split" type="checkbox"> <span data-en="Split by sample-arm group" data-zh="按样本臂分组拆分"></span></label>
+<label><span data-en="Series B (optional)" data-zh="系列 B（可选）"></span> <select id="comp-b"><option value="">—</option></select></label>
+<span id="comp-note"></span></div>
+<div id="comp-chart"></div>
 <h2 data-en="Measured immune composition (no deconvolution)" data-zh="免疫成分实测（不做反卷积）"></h2>
 <p data-en="Immune-cell fractions below are measured directly from the cell-level data. No bulk deconvolution (CIBERSORT/ssGSEA-style inference) is performed anywhere in this resource. Most series are n=1/arm or low-replication, so group differences are descriptive."
 data-zh="下表免疫细胞占比直接由细胞级数据实测。本资源任何地方都不做 bulk 反卷积（CIBERSORT/ssGSEA 类推断）。多数系列为 n=1/臂或低重复，组间差异均为描述性。"></p>
@@ -30,4 +50,4 @@ data-zh="下表免疫细胞占比直接由细胞级数据实测。本资源任�
 <footer><span data-en="CochleaConsensus v1.0 · Data package: Zenodo DOI" data-zh="CochleaConsensus v1.0 · 数据包：Zenodo DOI"></span>
 <a href="https://doi.org/10.5281/zenodo.23754507">10.5281/zenodo.23754507</a> (concept DOI 10.5281/zenodo.23754506) ·
 <span data-en="Derived result tables only; source data from GEO." data-zh="仅分发派生结果表；原始数据来自 GEO。"></span></footer>
-<script src="assets/app.js?v=20261029"></script></body></html>
+<script src="assets/app.js?v=20261029c"></script></body></html>

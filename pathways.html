@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pathways · CochleaConsensus</title>
-<link rel="stylesheet" href="assets/style.css?v=20261029b"></head>
+<link rel="stylesheet" href="assets/style.css?v=20261029c"></head>
 <body data-page="pathways.html">
 <header><div class="brand">CochleaConsensus</div>
 <div class="tag" data-en="Uniformly reanalysed cross-study consensus of animal hearing-loss models (mouse + zebrafish regeneration module) · v1.0, frozen 2026-10-29"
@@ -16,16 +16,19 @@ data-zh="动物听力损失模型（小鼠 + 斑马鱼再生模块）统一重�
 data-zh="对跨研究共识基因集按方向分开做的过表征富集（GO / KEGG / Reactome），背景为该层实际检验基因集、非全基因组。20 个基因集共 2,838 条通路过 q &lt; 0.05。老化 bulk 层未做富集（共识仅 1 个基因）。"></p>
 <p class="warn" data-en="Interpretation boundary: the mouse REGEN consensus is dominated by one reprogramming study (GSE161156) and partly reflects supporting-cell to hair-cell-like identity conversion; its enrichment results carry the same caveat and must not be read as a pure regeneration program. The REGEN down set returned no significant term in any database."
 data-zh="解释边界：小鼠再生层共识被一个重编程研究（GSE161156）主导，部分反映支持细胞→毛细胞样身份转换；其富集结果带同一限定，不得直读为纯粹再生程序。再生下调集在所有数据库中无显著通路。"></p>
-<div class="filters"><label>Set <select id="p-set"></select></label></div>
+<div class="filters"><label>Set <select id="p-set"></select></label>
+<label><span data-en="Database" data-zh="数据库"></span> <select id="p-db"><option value="">All</option><option>GO_BP</option><option>GO_CC</option><option>GO_MF</option><option>KEGG</option><option>Reactome</option></select></label>
+<label><span data-en="Search term" data-zh="搜索词条"></span> <input id="p-q" type="text"></label><span id="p-count"></span></div>
 <img id="p-dot" src="" alt="" style="max-width:100%">
 <table class="t" id="pathway-table"></table>
 <h2 data-en="Transcription-factor target enrichment" data-zh="转录因子靶基因富集"></h2>
 <p data-en="Enrichment of DoRothEA mouse regulon target sets in the same consensus gene sets (245 significant set–TF pairs at q &lt; 0.05). This is TF target enrichment, not inferred TF activity."
 data-zh="用 DoRothEA 小鼠 regulon 靶基因集对同一批共识基因集做的富集（q &lt; 0.05 显著 245 对）。这是 TF 靶基因富集，不是 TF 活性推断。"></p>
+<div class="filters"><label><span data-en="Search TF" data-zh="搜索 TF"></span> <input id="tf-q" type="text"></label><span id="tf-count"></span></div>
 <table class="t" id="tf-table"></table>
 
 </main>
 <footer><span data-en="CochleaConsensus v1.0 · Data package: Zenodo DOI" data-zh="CochleaConsensus v1.0 · 数据包：Zenodo DOI"></span>
 <a href="https://doi.org/10.5281/zenodo.23754507">10.5281/zenodo.23754507</a> (concept DOI 10.5281/zenodo.23754506) ·
 <span data-en="Derived result tables only; source data from GEO." data-zh="仅分发派生结果表；原始数据来自 GEO。"></span></footer>
-<script src="assets/app.js?v=20261029"></script></body></html>
+<script src="assets/app.js?v=20261029c"></script></body></html>

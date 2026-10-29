@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Consensus · CochleaConsensus</title>
-<link rel="stylesheet" href="assets/style.css?v=20261029b"></head>
+<link rel="stylesheet" href="assets/style.css?v=20261029c"></head>
 <body data-page="consensus.html">
 <header><div class="brand">CochleaConsensus</div>
 <div class="tag" data-en="Uniformly reanalysed cross-study consensus of animal hearing-loss models (mouse + zebrafish regeneration module) · v1.0, frozen 2026-10-29"
@@ -16,9 +16,15 @@ data-zh="动物听力损失模型（小鼠 + 斑马鱼再生模块）统一重�
 data-zh="逐损伤层跨研究共识：在 ≥2 个独立研究中同向显著的基因（strong + consensus 级）。整体图景以层特异响应为主——≥3 个小鼠层共享的跨损伤核心只有 10 个同向基因（上调：Gdf15、Myh9）。"></p>
 <img src="img/upset_cross_insult.png" alt="UpSet cross-insult" style="max-width:100%">
 <div class="filters"><label>Layer <select id="c-layer"></select></label>
-<label><span data-en="Search gene" data-zh="搜索基因"></span> <input id="c-q" type="text"></label><span id="c-count"></span></div>
+<label><span data-en="Direction" data-zh="方向"></span> <select id="c-dir"><option value="">All</option><option value="up">up</option><option value="down">down</option></select></label>
+<label><span data-en="Min. supporting studies" data-zh="最低支持研究数"></span> <input id="c-minns" type="range" min="2" max="10" step="1" value="2"> <b id="c-minns-v">2</b></label>
+<label><span data-en="Search gene" data-zh="搜索基因"></span> <input id="c-q" type="text"></label>
+<button id="c-export" data-en="Export filtered CSV" data-zh="导出当前筛选 CSV"></button>
+<span id="c-count"></span></div>
 <table class="t" id="consensus-table"></table>
 <h2 data-en="Cross-insult core (≥3 mouse layers, same direction)" data-zh="跨损伤核心（≥3 个小鼠层同向）"></h2>
+<p data-en="Click a gene in the core table to highlight the layers it belongs to and find it in the consensus table above."
+data-zh="点击核心表中的基因，可高亮它所在的层并在上方共识表中定位。"></p>
 <table class="t" id="core-table"></table>
 <p id="specific-note"></p>
 
@@ -26,4 +32,4 @@ data-zh="逐损伤层跨研究共识：在 ≥2 个独立研究中同向显著�
 <footer><span data-en="CochleaConsensus v1.0 · Data package: Zenodo DOI" data-zh="CochleaConsensus v1.0 · 数据包：Zenodo DOI"></span>
 <a href="https://doi.org/10.5281/zenodo.23754507">10.5281/zenodo.23754507</a> (concept DOI 10.5281/zenodo.23754506) ·
 <span data-en="Derived result tables only; source data from GEO." data-zh="仅分发派生结果表；原始数据来自 GEO。"></span></footer>
-<script src="assets/app.js?v=20261029"></script></body></html>
+<script src="assets/app.js?v=20261029c"></script></body></html>

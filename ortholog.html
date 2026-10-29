@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ortholog contrast · CochleaConsensus</title>
-<link rel="stylesheet" href="assets/style.css?v=20261029b"></head>
+<link rel="stylesheet" href="assets/style.css?v=20261029c"></head>
 <body data-page="ortholog.html">
 <header><div class="brand">CochleaConsensus</div>
 <div class="tag" data-en="Uniformly reanalysed cross-study consensus of animal hearing-loss models (mouse + zebrafish regeneration module) · v1.0, frozen 2026-10-29"
@@ -15,6 +15,16 @@ data-zh="动物听力损失模型（小鼠 + 斑马鱼再生模块）统一重�
 <p data-en="Formal mouse–zebrafish contrast: within-study Stouffer merging (handling shared controls and time series), 7,983 1:1 ortholog pairs, direction concordance with binomial / Spearman / Fisher tests and a 5,000-permutation homolog null. Concordance is strongest for regeneration, present for genetic and noise layers, absent for ototoxicity and aging."
 data-zh="鼠↔鱼正式对比：研究内 Stouffer 合并（处理共享对照与时间序列），7,983 对 1:1 同源基因，方向一致性配二项/Spearman/Fisher 检验与 5,000 次同源置换零分布。再层一致性最强，遗传与噪声层存在，耳毒与老化层缺失。"></p>
 <table class="t" id="ortho-table"></table>
+<h2 data-en="Browse the concordant gene lists" data-zh="浏览同向基因名单"></h2>
+<p data-en="Select a mouse layer to browse its same-direction concordant ortholog pairs (gene-level records behind the summary above, loaded per layer). Search by mouse or fish gene, filter by direction; display is capped at the first 200 rows."
+data-zh="选择小鼠层，浏览其同向同源基因对名单（上方汇总背后的基因级记录，逐层加载）。可按小鼠或鱼基因搜索、按方向筛选；最多显示前 200 行。"></p>
+<div class="filters">
+<label><span data-en="Mouse layer" data-zh="小鼠层"></span> <select id="o-layer"></select></label>
+<label><span data-en="Direction" data-zh="方向"></span> <select id="o-dir"><option value="">All</option><option value="up">up</option><option value="down">down</option></select></label>
+<label><span data-en="Search gene" data-zh="搜索基因"></span> <input id="o-q" type="text"></label>
+<span id="o-count"></span></div>
+<div id="o-stats" class="cards"></div>
+<table class="t" id="o-table"></table>
 <p data-en="Anchor: Atoh1 → atoh1a is bilateral-strong and same-direction in the REGEN and GENETIC layers. Note that Atoh1 cross-species regeneration biology was pre-validated at the enhancer level by Shi et al. (PNAS 2024, PMID 39671177); the transcriptome-wide concordance test here is the new layer."
 data-zh="锚点：Atoh1 → atoh1a 在再生层与遗传层均为双侧 strong 且同向。注：Atoh1 的跨物种再生生物学已由 Shi et al.（PNAS 2024，PMID 39671177）在增强子层预验证；本资源的新层是全转录组级的一致性检验。"></p>
 <p data-en="Downloads: same-direction concordant gene lists per layer are in the Downloads section and in the Zenodo package."
@@ -24,4 +34,4 @@ data-zh="下载：逐层同向共识基因名单见 Downloads 区与 Zenodo 数�
 <footer><span data-en="CochleaConsensus v1.0 · Data package: Zenodo DOI" data-zh="CochleaConsensus v1.0 · 数据包：Zenodo DOI"></span>
 <a href="https://doi.org/10.5281/zenodo.23754507">10.5281/zenodo.23754507</a> (concept DOI 10.5281/zenodo.23754506) ·
 <span data-en="Derived result tables only; source data from GEO." data-zh="仅分发派生结果表；原始数据来自 GEO。"></span></footer>
-<script src="assets/app.js?v=20261029"></script></body></html>
+<script src="assets/app.js?v=20261029c"></script></body></html>
